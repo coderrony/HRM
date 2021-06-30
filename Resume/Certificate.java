@@ -1,4 +1,4 @@
-package HrmManagement.Resume;
+package Hrm.Resume;
 
 public enum Certificate {
     BBA,

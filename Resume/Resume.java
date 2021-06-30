@@ -1,22 +1,20 @@
-package HrmManagement.Resume;
+package Hrm.Resume;
 
 public class Resume {
-    private Contract contract;
-    private Skrill skrill;
-    private Education education;
+    Certificate certificate;
+     Skrill skrill;
 
-    public Resume(Contract contract, Skrill skrill, Education education) {
-        this.contract = contract;
+    public Resume(Certificate certificate, Skrill skrill) {
+        this.certificate = certificate;
         this.skrill = skrill;
-        this.education = education;
     }
 
-    public Contract getContract() {
-        return contract;
+    public Certificate getCertificate() {
+        return certificate;
     }
 
-    public void setContract(Contract contract) {
-        this.contract = contract;
+    public void setCertificate(Certificate certificate) {
+        this.certificate = certificate;
     }
 
     public Skrill getSkrill() {
@@ -27,20 +25,11 @@ public class Resume {
         this.skrill = skrill;
     }
 
-    public Education getEducation() {
-        return education;
-    }
-
-    public void setEducation(Education education) {
-        this.education = education;
-    }
-
     @Override
     public String toString() {
         return "Resume{" +
-                "contract=" + contract +
+                "certificate=" + certificate +
                 ", skrill=" + skrill +
-                ", education=" + education +
                 '}';
     }
 }

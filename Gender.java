@@ -1,4 +1,4 @@
-package HrmManagement;
+package Hrm;
 
 public enum Gender {
     MALE,
